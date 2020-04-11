@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="fonts/TTNorms/stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="search-inventory">
+        <p>Enter inventory number, guid or bims id</p>
+        <form name="searchInventory_" method="get">
+            <p>
+                <input class="custom" type="search">
+                <button name="searchInventory_" type="submit">Search</button>
+            </p>
+        </form>
+    </div>
+
+    <div class="block-inventory">
+        <div>
+
+            <div class="image-inventory">
+                <img src="icons/scale.svg" alt="Scale">
+                <div>
+                    <h3>Аналитические весы OHAUS Adventurer АХ324 (B715976163)</h3>
+                </div>
+            </div>
+
+            <div>
+                <form name="generateReport" method="get">
+                    <select>
+                        <option value="1 month ">1 month</option>
+                        <option value="2 month ">2 month</option>
+                    </select>
+                    <div>
+                        <p>
+                            <input name="choiceContact" type="radio" value="Calibration" id="contactCalibration">
+                            <label for="contactCalibration">Calibration</label>
+                        </p>
+
+                        <p>
+                            <input name="choiceContact" type="radio" value="Measuring" id="contactMeasuring">
+                            <label for="contactMeasuring ">Measuring</label>
+                        </p>
+
+                        <p>
+                            <input name="choiceContact" type="radio" value="Using" id="contactUsing">
+                            <label for="contactUsing">Using</label>
+                        </p>
+                    </div>
+                    <button type="submit">Generate report</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="description-inventory">
+            <div>
+                <ul>
+                    <li>Тип оборудования: <span>Весы</span></li>
+                    <li>Статус: <span>Готов к работе</span></li>
+                    <li>Изготовитель: <span>Ohaus</span></li>
+                    <li>Модель: <span>AX-123</span>.</li>
+                    <li>Ответственное подразделение (ремонт): <span>Группа обслуживания лабораторного
+                            оборудования</span></li>
+                    <li>Эксплуатирующее подразделение: <span>Химико-аналитическая лаборатория 2.0</span></li>
+                    <li>МОЛ: <span>Иванов Иван Иванович </span></li>
+                    <li>Территория: <span>г. Санкт-Петербург (Нойдорф)</span></li>
+                    <li>GUID: <a href=" ">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></li>
+                    <li>Bims ID: <a href=" ">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></li>
+                    <li>Tam: <a href=" ">А-001234</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="report">
+        <table class="report-table">
+            <caption>Calibration report</caption>
+            <tr id="reportRow">
+                <th class="column-date">Date</th>
+                <th class="column-buffer-solutions">Used buffer solutions</th>
+                <th class="column-slope">Slope, % Norm 95-105</th>
+                <th class="column-offset">Offset, mV Norm ±(0-20)</th>
+                <th class="column-user">User</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
