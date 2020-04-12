@@ -1,1 +1,1 @@
-<?php include_path='.:/report.html'; ?>
+<?php include_once(“report.html”); ?>
