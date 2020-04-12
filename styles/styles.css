@@ -182,16 +182,18 @@ form[name=generateReport] input[type="radio"]:checked {
     border-radius: 5px;
     margin-left: auto;
     margin-right: 0em;
+    padding-top: 20px;
 }
 
 .description-inventory div {
-    width: 513.33px;
+    width: 526.33px;
     height: 290px;
-    margin: 20px 18.33px;
+    padding-left: 18.33px;
 }
 
 .description-inventory ul {
     padding-left: 0;
+    margin: 0;
 }
 
 .description-inventory li {
@@ -309,4 +311,27 @@ table.report-table p {
 table.report-table td{
 padding-bottom: 20px;
 padding-top: 10px;
+}
+
+
+@media (max-width: 769px) {
+    .block-inventory {
+        display: block;
+    }
+
+    .description-inventory{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 79%;
+    }
+    .description-inventory div{
+        width: 96%;
+        overflow:auto;
+    }
+
+    .image-inventory img {
+        width: 8%;
+    }
+    
 }
