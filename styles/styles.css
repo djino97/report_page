@@ -314,7 +314,7 @@ padding-top: 10px;
 }
 
 
-@media (max-width: 769px) {
+@media screen (max-width: 769px) {
     .block-inventory {
         display: block;
     }
