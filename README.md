@@ -1,2 +1,2 @@
 # report_page
-Deploy page <link>https://report-page.herokuapp.com/</link>
+Page deployment <link>https://report-page.herokuapp.com/</link>
