@@ -260,7 +260,8 @@ table.report-table th {
 }
 
 .column-slope {
-    width: 10%;
+    width: 14%;
+    padding-right: 60px
 }
 
 .column-offset {
